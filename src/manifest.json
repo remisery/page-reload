@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Page Reload",
+  "description": "Browser extension for automatically reload webpages",
+  "version": "0.1.0",
+  "browser_action": {
+    "default_icon": "media/icon.png",
+    "default_popup": "pages/popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": [
+      "scripts/classes/Session.js",
+      "scripts/classes/Messaging.js",
+      "scripts/classes/Browser.js",
+      "scripts/background.js"
+    ],
+    "persistent": false
+  }
+}
