@@ -4,8 +4,14 @@
   "description": "Browser extension for automatically reload webpages",
   "version": "0.1.0",
   "browser_action": {
-    "default_icon": "media/icon.png",
     "default_popup": "pages/popup.html"
+  },
+  "icons": {
+    "16": "media/icon16.png",
+    "24": "media/icon24.png",
+    "32": "media/icon32.png",
+    "48": "media/icon48.png",
+    "128": "media/icon128.png"
   },
   "permissions": [
     "activeTab"
