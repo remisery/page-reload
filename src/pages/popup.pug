@@ -5,31 +5,32 @@ html
     // Load styles
     link(rel='stylesheet', href='../vendor/bootstrap/bootstrap.css')
     link(rel='stylesheet', href='../styles/master.css')
-  body
+  body.p-1
     // Form inputs
     form#interval(novalidate='')
-      .btn-toolbar(role='toolbar')
+      
+      .btn-toolbar.mb-2(role='toolbar')
         .btn-group.mr-2(role='group')
           input.form-control.form-control-sm(type='text', name='duration')
         .btn-group(role='group')
           input.btn.btn-secondary.form-control.form-control-sm(type='button', name='submit', value='Start')
-      hr
+      
       .row
         .col-12
           label.form-check-label
             input.form-check-input(type='checkbox', name='infinity')
             |  Restart after reload
+      
       .row
         .col-12
           label.form-check-label
             input.form-check-input(type='checkbox', name='bypasscache')
             |  Bypass local cache
-      hr.mb-0
-      footer.text-center
+      
+      footer.mt-2.text-center
         small
           a.text-muted(target='_blank', href='https://github.com/remisery') Version 0.1.0
     // Load scripts
-    script(src='../vendor/vue/vue.js')
     script(src='../scripts/classes/Messaging.js')
     script(src='../scripts/classes/Browser.js')
     script(src='../scripts/popup.js')
